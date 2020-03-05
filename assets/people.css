@@ -1,20 +1,23 @@
-body, h1, h2, h3, h4, ul, ol, li, p {
-	margin: 0;
+.article {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 300px;
+	width: 100%;
+	margin-top: 20px;
+	padding: 20px 30px;
+	border-radius: 20px;
+	border: 1px solid #000;
 }
 
-* { 
-box-sizing: border-box; 
-} 
+.article__photo.-orig {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
 
-a { 
-text-decoration: none; 
-} 
-
-.container { 
-width: 1024px; 
-margin: 0 auto; 
-} 
-
-img { 
-max-width: 100%; 
+.article__photo {
+	max-height: 150px;
+	border-radius: 10px;
+	margin-right: 20px;
 }
