@@ -1,7 +1,8 @@
 :root {
 	--main-bg: #be03fc;
-	--imptnt-clr: #ff9603;
+	--imprtnt-clr: #ff9603;
 	--footer-clr: #565656;
+	--green: #2dde16;
 }
 
 
@@ -27,6 +28,10 @@ margin: 0 auto;
 
 img { 
 max-width: 100%; 
+}
+
+.imprtnt-clr {
+	color: var(--imprtnt-clr)
 }
 
 .header__container {
@@ -94,7 +99,13 @@ max-width: 100%;
 }
 
 .footer__link {
+	display: inline-block;
 	color: var(--imptnt-clr);
 	margin: 0 8px;
 	font-size: 17px;
+	transition: .5s;
+}
+
+.footer__link:hover {
+	transform: scale(1.2);
 }
